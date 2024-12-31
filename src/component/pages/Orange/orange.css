@@ -1,0 +1,45 @@
+/* Grid container for images */
+.imagescontainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 10px; /* Adds space between images */
+    padding: 20px; /* Adds padding around the container */
+}
+
+/* Style for each image */
+.awerness-img {
+    width: 100%; /* Ensures images fill their column */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; 
+    background-color: transparent; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Hover effect for images */
+.awerness-img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive design: 2 columns on smaller screens */
+@media (max-width: 1024px) {
+    .imagescontainer {
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+    }
+
+    .awerness-img {
+        height: 180px; /* Adjust image height for smaller screens */
+    }
+}
+
+/* Responsive design: 1 column on mobile screens */
+@media (max-width: 768px) {
+    .imagescontainer {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+
+    .awerness-img {
+        height: auto; /* Automatically adjust height to maintain aspect ratio */
+    }
+}

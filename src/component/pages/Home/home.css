@@ -1,0 +1,228 @@
+/* General Styles */
+.slider-container {
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 1s ease-in-out;
+}
+
+.homeimg {
+    margin: 0;
+    width: 100%;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* .home-image {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+} */
+
+.additional-image,
+.voteimg,
+.awernesspic {
+    width: 30%;
+    margin-left: 3%;
+}
+
+.votepara {
+    display: flex;
+    margin-top: 8%;
+}
+
+.awernesscontent,
+.awerness,
+.awern {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.awernesscontent {
+    padding: 15px 0 0 15px;
+}
+
+.awerness {
+    display: flex;
+    padding-left: 15px;
+    padding-top: 35px;
+}
+
+.awernesspic {
+    width: 30%;
+}
+
+.headingawer {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(73, 65, 65);
+}
+
+.paracontent {
+    margin-top: 5%;
+}
+
+.head {
+    text-align: center!important;
+    /* font-size: 1.9rem; */
+    font-weight: bold;
+    color: rgb(73, 65, 65);
+}
+.additional-image {
+  width: 100%;
+  /* height: auto; */
+  border-radius: 10px;
+}
+.details {
+  display: flex;
+  gap: 100px;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+
+
+/* Right side box container */
+.box-container {
+  /* flex: 2; Takes 2 portions of the available space */
+  display: flex;
+  flex-direction:row;
+  gap: 50px;
+  padding-top: 8%;
+}
+
+/* Box styles */
+.box {
+  padding: 5px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+  cursor: pointer;
+  width: 100px;
+  /* padding-right: 20%; */
+}
+
+/* Individual box colors */
+.pink-box {
+  background-color: rgb(253, 90, 117);
+  /* text-align: center; */
+  padding-top: 5%;
+}
+
+.orange-box {
+  background-color: orange;
+  padding-top: 5%;
+}
+
+.red-box {
+  background-color: red;
+}
+
+.violet-box {
+  background-color: violet;
+  
+}
+
+/* Hover effects for boxes */
+.pink-box:hover {
+  background-color: #ff69b4; /* Darker pink */
+}
+
+.orange-box:hover {
+  background-color: #ff8c00; /* Darker orange */
+}
+
+.red-box:hover {
+  background-color: #b22222; /* Darker red */
+}
+
+.violet-box:hover {
+  background-color: #8a2be2; /* Darker violet */
+}
+.circle-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.circle-images{
+    width: 90px;
+    margin-top: 9px;
+}
+@media (max-width: 768px) {
+    .image-container {
+        display: block;
+    } 
+    .votepara {
+        display: block;
+    }
+    .awerness {
+        display: block;
+    }
+    .details {
+        display: block;
+        /* margin: 0%; */
+    }
+    .box-container {
+        display: block;
+        /* gap: 20px; */
+    }
+    .circle-container {
+        display:block;
+    }
+    .circle-container p {
+    text-align: center;
+    }
+    .additional-image,
+    .voteimg,
+    .awernesspic {
+        width: 100%;
+        margin-left: 0%;
+    }
+    .slider-container {
+        height: auto; /* Allow height to adjust dynamically */
+        max-height: 200px; /* Better scaling for tablet */
+    }
+    .slider-image {
+        width: 100%; /* Ensure full-width scaling */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Scale the image proportionally */
+    }
+    .box-container{
+        padding-left: 30%;
+        /* width: 100%; */
+        /* flex-direction:row; */
+
+    }
+}
+
+@media (max-width: 480px) {
+
+    .slider-container {
+        max-height: 100px; /* Smaller height for very small screens */
+        height: auto; /* Allow height to adjust dynamically */
+        /* width:50%; */
+    } 
+    
+    .slider-image {
+        width: 500px; /* Ensure the image takes up full width */
+        height: 70%;
+        object-fit: cover; /* Ensures proper scaling */
+    }
+}
+ 
+      
+      
